@@ -1,6 +1,6 @@
 # Kiochan’s Chotto Kawaii TTS Bot ♡
 
-<img src="./avatar.jpg" width="150" alt="Kio-chan Avatar" align="right">
+![Kio-chan Avatar](./avatar.jpg)
 
 A tiny, super-moe Discord bot that **reads your messages out loud** like a magical familiar.
 
