@@ -138,12 +138,14 @@ function resetDisconnectTimer(guildId: string, connection: VoiceConnection) {
   if (oldTimer) {
     clearTimeout(oldTimer);
   }
+
   // new timer for timeout
+  const timeoutMinutes = 30; // 30 min
   const timer = setTimeout(() => {
-    Logger.log(LogMessages.IdleTimeout, {});
+    Logger.log(LogMessages.IdleTimeout, { minutes: String(timeoutMinutes) });
     connection.destroy();
     disconnectTimers.delete(guildId);
-  }, 30 * 60 * 1000); // 30 min
+  }, timeoutMinutes * 60 * 1000);
 
   disconnectTimers.set(guildId, timer);
 }

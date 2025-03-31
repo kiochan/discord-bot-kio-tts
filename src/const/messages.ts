@@ -4,7 +4,7 @@ export enum LogMessages {
   LoginFailed = "❌ Failed to login: {error}",
   PlaybackFinish = "⏹️ Playback finished.",
   PlaybackError = "⚠️ Playback error: {error}",
-  IdleTimeout = "⏰ 10 分钟无消息，Bot 自动离开频道...",
+  IdleTimeout = "⏰ Timeout... {minutes} minutes no chats",
   VoiceSend = '[{user}] in #{channel} => "${text}" -> TTS: "${voice}"',
 }
 
